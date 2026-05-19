@@ -28,6 +28,7 @@
                 <a href="#trajectoria" class="nav-link">Nosotros</a>
                 <a href="#method" class="nav-link">Método</a>
                 <a href="#blog" class="nav-link">Insights</a>
+                <a href="#talento" class="nav-link">Talento</a>
             </nav>
             
             <div class="nav-actions">
@@ -40,7 +41,7 @@
             </div>
         </div>
     </header>
-
+ 
     <!-- --- MOBILE NAVIGATION OVERLAY DRAWER --- -->
     <div class="mobile-nav" id="mobile-nav">
         <div class="mobile-menu">
@@ -49,6 +50,7 @@
             <a href="#trajectoria" class="mobile-link">Nosotros</a>
             <a href="#method" class="mobile-link">Método</a>
             <a href="#blog" class="mobile-link">Insights</a>
+            <a href="#talento" class="mobile-link">Trabaja con nosotros</a>
         </div>
         <div class="mobile-actions">
             <a href="#cta" class="btn btn-accent">Sesión Diagnóstica</a>
@@ -782,6 +784,130 @@
             </div>
         </section>
 
+        <!-- --- CAREERS / TALENTO SECTION --- -->
+        <section class="careers" id="talento">
+            <div class="glow-orb glow-orb-careers"></div>
+            <div class="container careers-grid">
+                <div class="careers-info reveal">
+                    <span class="badge badge-primary">Trabaja con Nosotros</span>
+                    <h2 class="text-gradient">Únete a un equipo donde tu rigor técnico impulsa grandes negocios.</h2>
+                    <p class="careers-description">
+                        Buscamos profesionales apasionados por la contabilidad, la ingeniería tributaria, la gestión de nóminas y la consultoría estratégica. Si valoras el rigor metodológico, la innovación en la nube y el crecimiento profesional constante, Chirino &amp; Asociados es tu lugar.
+                    </p>
+                    
+                    <div class="culture-list">
+                        <div class="culture-item">
+                            <div class="culture-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                            </div>
+                            <div class="culture-text">
+                                <h4>Proyección Profesional Constante</h4>
+                                <p>Plan de carrera estructurado y oportunidades de especialización en áreas complejas de asesoría corporativa.</p>
+                            </div>
+                        </div>
+                        <div class="culture-item">
+                            <div class="culture-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                            </div>
+                            <div class="culture-text">
+                                <h4>Cultura de Excelencia Colaborativa</h4>
+                                <p>Un equipo multidisciplinario donde compartimos conocimientos y resolvemos retos contables complejos en conjunto.</p>
+                            </div>
+                        </div>
+                        <div class="culture-item">
+                            <div class="culture-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+                            </div>
+                            <div class="culture-text">
+                                <h4>Formación Continua OTEC</h4>
+                                <p>Acceso directo a capacitación reglamentaria y talleres internos subvencionados por nuestro propio organismo técnico.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="careers-form-container reveal reveal-delay-2">
+                    <div class="careers-card" id="careers-card-wrapper">
+                        <h3 class="form-title">Postular a la Firma</h3>
+                        <p class="form-subtitle">Completa tus datos y adjunta tu currículum (solo PDF).</p>
+                        
+                        <form id="careers-form" novalidate>
+                            <div class="form-group-row">
+                                <div class="form-group">
+                                    <label for="talent-name" class="form-label">Nombre Completo</label>
+                                    <input type="text" id="talent-name" class="form-input" placeholder="Ej. Sofía Benavides" required>
+                                    <span class="error-message" id="error-talent-name">El nombre es obligatorio.</span>
+                                </div>
+                                <div class="form-group">
+                                    <label for="talent-phone" class="form-label">Teléfono Móvil</label>
+                                    <input type="tel" id="talent-phone" class="form-input" placeholder="Ej. +56 9 1234 5678" required>
+                                    <span class="error-message" id="error-talent-phone">El teléfono es obligatorio.</span>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="talent-email" class="form-label">Email de Contacto</label>
+                                <input type="email" id="talent-email" class="form-input" placeholder="sofia@correo.com" required>
+                                <span class="error-message" id="error-talent-email">Ingresa un correo electrónico válido.</span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="talent-area" class="form-label">Área de Postulación</label>
+                                <select id="talent-area" class="form-input" required>
+                                    <option value="" disabled selected>Selecciona tu especialidad...</option>
+                                    <option value="contabilidad">Contabilidad y Auditoría</option>
+                                    <option value="tributaria">Asesoría Tributaria / Fiscal</option>
+                                    <option value="remuneraciones">Remuneraciones y Nómina</option>
+                                    <option value="practica">Práctica Profesional / Junior</option>
+                                </select>
+                                <span class="error-message" id="error-talent-area">Debes seleccionar un área de interés.</span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label class="form-label">Currículum Vitae (Solo PDF)</label>
+                                <div class="file-uploader-zone" id="cv-upload-zone">
+                                    <input type="file" id="talent-cv" class="file-uploader-input" accept=".pdf" required>
+                                    <div class="uploader-content" id="uploader-default-content">
+                                        <svg class="uploader-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M17 8l-5-5-5 5M12 3v12"/>
+                                        </svg>
+                                        <p class="uploader-text"><strong>Arrastra tu CV aquí</strong> o haz clic para buscar</p>
+                                        <p class="uploader-info">Formatos aceptados: Solo PDF (Máx. 10MB)</p>
+                                    </div>
+                                    <div class="uploader-file-info" id="uploader-file-info" style="display: none;">
+                                        <svg class="pdf-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                                            <polyline points="14 2 14 8 20 8"/>
+                                            <line x1="16" y1="13" x2="8" y2="13"/>
+                                            <line x1="16" y1="17" x2="8" y2="17"/>
+                                        </svg>
+                                        <div class="file-details">
+                                            <span class="file-name" id="selected-file-name">cv_nombre.pdf</span>
+                                            <span class="file-size" id="selected-file-size">1.2 MB</span>
+                                        </div>
+                                        <button type="button" class="btn-remove-file" id="btn-remove-cv" aria-label="Quitar archivo">
+                                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                                        </button>
+                                    </div>
+                                </div>
+                                <span class="error-message" id="error-talent-cv">Es obligatorio subir tu CV en formato PDF.</span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="talent-message" class="form-label">Carta de Presentación / Mensaje (Opcional)</label>
+                                <textarea id="talent-message" class="form-input form-textarea" placeholder="Cuéntanos brevemente por qué te gustaría unirte a la firma..."></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-accent btn-submit" id="talent-submit-btn">
+                                <span>Enviar Postulación</span>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- --- CALL TO ACTION (CTA BOX) --- -->
         <section class="cta" id="cta">
             <div class="container">
@@ -868,6 +994,7 @@
                     <li><a href="#method" class="footer-link">El Método Chirino</a></li>
                     <li><a href="#blog" class="footer-link">Insights y Prensa</a></li>
                     <li><a href="#trajectoria" class="footer-link">Acreditaciones</a></li>
+                    <li><a href="#talento" class="footer-link">Trabaja con nosotros</a></li>
                 </ul>
             </div>
             
